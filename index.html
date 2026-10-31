@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Little Book of Fariha ♡</title>
+<meta name="theme-color" content="#c9b6ff">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Noto+Serif+Bengali:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="flower" viewBox="-50 -50 100 100"><g fill="#ff9fcf" fill-opacity=".8">
+<ellipse rx="12" ry="25" cy="-21"/><ellipse rx="12" ry="25" cy="-21" transform="rotate(72)"/><ellipse rx="12" ry="25" cy="-21" transform="rotate(144)"/><ellipse rx="12" ry="25" cy="-21" transform="rotate(216)"/><ellipse rx="12" ry="25" cy="-21" transform="rotate(288)"/></g>
+<circle r="9" fill="#ffe08a"/><circle r="4" fill="#fff" fill-opacity=".7" cx="-3" cy="-3"/></symbol></defs></svg>
+
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div id="petals"></div>
+
+<div id="cover"><div class="cover-card glass">
+  <svg class="bloom" viewBox="-50 -50 100 100"><use href="#flower"/></svg>
+  <h1>A Little Book of Fariha ♡</h1>
+  <p class="tag">একটি ছোট্ট স্মৃতির বই</p>
+  <button class="orb" id="openBook">Open the Book</button>
+</div></div>
+
+<header class="brand"><svg viewBox="-50 -50 100 100"><use href="#flower"/></svg><span>A Little Book of Fariha ♡</span></header>
+<nav id="nav"></nav>
+<main id="app"><section class="glass hero"><h1>A Little Book of Fariha</h1>
+<p>কিছু অনুভূতি শব্দে প্রকাশ করা কঠিন। কিছু কথা মনের ভেতরেই থেকে যায়, কিছু স্মৃতি নীরবে সুন্দর হয়ে ওঠে। এই ছোট্ট ডিজিটাল বইটি তেমনই কিছু লেখা, কবিতা, স্মৃতি আর সুন্দর মুহূর্তের সংগ্রহ।</p>
+<div class="orbs"><a class="orb" href="#letter">A Letter</a><a class="orb" href="#poems">My Poems</a><a class="orb" href="#story">A Story</a><a class="orb" href="#photos">Photo Gallery</a><a class="orb" href="#videos">Video Gallery</a><a class="orb" href="#music">My Music</a></div></section></main>
+<footer>
+  <div class="divider"><svg viewBox="-50 -50 100 100"><use href="#flower"/></svg><svg viewBox="-50 -50 100 100"><use href="#flower"/></svg><svg viewBox="-50 -50 100 100"><use href="#flower"/></svg></div>
+  <p>Made with love ♡</p>
+  <button class="link" id="adminBtn">Admin</button>
+</footer>
+
+<div id="bar" hidden></div>
+<div id="lb" hidden></div>
+<dialog id="login"><h3>Admin Login</h3>
+<input id="em" type="email" placeholder="Email"><input id="pw" type="password" placeholder="Password">
+<p id="le"></p><button class="orb sm" id="go">Login</button> <button class="orb sm" id="cx">Cancel</button></dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="script.js"></script><script src="admin.js"></script>
+</body></html>
